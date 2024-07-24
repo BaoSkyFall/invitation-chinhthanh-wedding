@@ -1155,14 +1155,14 @@ body.offcanvason .oliven-nav-toggle {
 }
 .bridegroom .info .social a {
   text-align: center;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   border-radius: 50%;
   border: 1px solid #eee;
   color: #888;
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .bridegroom .info .social a:hover {
   background-color: #BD945A;
