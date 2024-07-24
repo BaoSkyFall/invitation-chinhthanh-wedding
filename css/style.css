@@ -1207,6 +1207,7 @@ body.offcanvason .oliven-nav-toggle {
 }
 #countdown .section-head {
     margin-bottom: 30px;
+    margin-top: 100px;
     z-index: 1;
 }
 #countdown .section-head span {
@@ -1220,7 +1221,7 @@ body.offcanvason .oliven-nav-toggle {
 }
 #countdown .section-head h4 {
     position: relative;
-    color: #fff;
+    color: #000000;
     font-family: 'Alex Brush', cursive;
     font-weight: 400;
     font-size: 60px;
