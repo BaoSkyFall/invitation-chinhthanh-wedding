@@ -1132,9 +1132,10 @@ body.offcanvason .oliven-nav-toggle {
   margin-left: 160px;
 }
 .bridegroom .info h6 {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 5px;
     font-weight: 400;
+    font-family: 'Alex Brush', cursive;
 }
 .bridegroom .info h6 i {
     color: #BD945A;
@@ -1142,9 +1143,9 @@ body.offcanvason .oliven-nav-toggle {
 }
 .bridegroom .info span {
       color: #BD945A;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
-    font-family: 'Alex Brush', cursive;
+    font-family: 'Barlow Semi Condensed', serif;
 }
 .bridegroom .info p {
     margin-top: 10px;
