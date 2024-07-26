@@ -306,5 +306,65 @@
         }
         //seconds
       }, 0)
+     // IDs for the bride and groom
+     const brideId = '100010193289535'; // Replace with actual bride's Facebook ID
+     const groomId = '100009013866445'; // Replace with actual groom's Facebook ID
+
+     // Detect the user's device
+     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+     if (/android/i.test(userAgent)) {
+         // Android
+         document.getElementById('facebook-bride').href = `fb://facewebmodal/f?href=https://www.facebook.com/${brideId}`;
+         document.getElementById('facebook-groom').href = `fb://facewebmodal/f?href=https://www.facebook.com/${groomId}`;
+         document.getElementById('messenger-bride').href = `fb-messenger://user/${brideId}`;
+         document.getElementById('messenger-groom').href = `fb-messenger://user/${groomId}`;
+     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+         // iOS
+         document.getElementById('facebook-bride').href = `fb://profile/${brideId}`;
+         document.getElementById('facebook-groom').href = `fb://profile/${groomId}`;
+         document.getElementById('messenger-bride').href = `fb-messenger://user-thread/${brideId}`;
+         document.getElementById('messenger-groom').href = `fb-messenger://user-thread/${groomId}`;
+     } else {
+         // Laptop or other devices
+         document.getElementById('facebook-bride').href = `https://www.facebook.com/${brideId}`;
+         document.getElementById('facebook-groom').href = `https://www.facebook.com/${groomId}`;
+         document.getElementById('messenger-bride').href = `https://www.messenger.com/t/${brideId}`;
+         document.getElementById('messenger-groom').href = `https://www.messenger.com/t/${groomId}`;
+     }
   }());
+
+  function copySTK(index) {
+    // Text to be copied
+    const textToCopy = index == 1? '938443767' : '00000186678';
     
+    // Create a temporary input element
+    const tempInput = document.createElement('input');
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+    
+    // Select the text
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); // For mobile devices
+    
+    // Copy the text
+    document.execCommand('copy');
+    
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
+    
+    // Change the button text
+    const copyButton = document.querySelector('input[value="Copy STK"]');
+    copyButton.value = "Đã Copy";
+}
+
+function downloadQR(index) {
+    const imageUrl = `images/whenwhere/qr-${index}.jpg`;
+    const link = document.createElement('a');
+    link.href = imageUrl;
+    link.download = `qr-${index}.jpg`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
