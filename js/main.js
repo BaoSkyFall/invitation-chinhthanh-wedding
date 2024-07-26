@@ -376,7 +376,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const formObject = {};
     formData.forEach((value, key) => formObject[key] = value);
     $.ajax({
-        url: 'https://script.google.com/macros/s/AKfycbxXu_STv3QM86UTRJG3Je4C-cJWxcEr4jtY28Q2R7PKCK-7vQo0TqWXHeg4j0-0WvTDkQ/exec',  // Replace with your Web App URL
+        url: 'https://script.google.com/macros/s/AKfycbxDkOrsswBllM1dIYN6wOvWY9pSm1yYPN_pmoJ1yi5Wm8fKiHke6NOdJVdYb8n6cgX1dQ/exec',  // Replace with your Web App URL
         method: 'POST',
         crossDomain: true,
         data: JSON.stringify(formObject),
