@@ -376,7 +376,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const formObject = {};
     formData.forEach((value, key) => formObject[key] = value);
 
-    fetch('https://script.google.com/macros/s/AKfycbxiSyXJX6dZ6Ci9Td4mHQ5h7O51APk_VCeN84uyUJDtoWRwx1kFNw5sEpaaIXRbRuPCIQ/exec', {  // Replace with your Web App URL
+    fetch('https://script.google.com/macros/s/AKfycbzFEHuB9y1ol9GhsHLzoxsVwqPztqrjrzemcjnvSh6lv6xhf79GLZQlD4mWH4CDYKh5_Q/exec', {  // Replace with your Web App URL
         redirect: "follow",  
     method: 'POST',
       body: JSON.stringify(formObject),
