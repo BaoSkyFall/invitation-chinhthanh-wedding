@@ -159,6 +159,7 @@ input[type="password"],
 input[type="email"],
 input[type="text"],
 input[type="file"],
+select,
 textarea,
 #message,
 #search {
@@ -378,7 +379,7 @@ input[type=radio]:checked:before {
 }
 .section-padding {
     padding-top: 100px;
-    /* padding-bottom: 100px; */
+    padding-bottom: 100px;
 }
 .js .animate-box {
     opacity: 0;
@@ -1615,6 +1616,10 @@ body.offcanvason .oliven-nav-toggle {
 .whenwhere .item .content p i {
     color: #BD945A;
 }
+.whenwhere a {
+    font-family: 'Alex Brush', cursive;
+    font-size: 30px;
+}
 .whenwhere-entry {
     width: 100%;
     float: left;
@@ -2243,4 +2248,8 @@ body.offcanvason .oliven-nav-toggle {
     .bg-fixed {
         background-attachment: scroll !important;
     }
+}
+#rsvp .form-group {
+    display: flex;
+    gap:10px
 }
