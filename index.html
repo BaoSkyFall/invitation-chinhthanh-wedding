@@ -437,73 +437,63 @@
                                 class="oliven-title-meta text-center">Bạn sẽ tham dự cùng chúng mình?</span>
                             <h2 class="oliven-title text-center">Xác Nhận Tham Dự</h2>
                             <br>
-                            <form class="contact__form" method="post" action="mail.php">
+                            <form class="contact__form" id="contactForm" method="post">
                                 <!-- form message -->
                                 <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg" style="display: none"
-                                            role="alert"> Your message was sent successfully. </div>
-                                    </div>
+                                  <div class="col-12">
+                                    <div class="alert alert-success contact__msg" style="display: none" role="alert"> Đã gửi xác nhận thành công. </div>
+                                  </div>
                                 </div>
                                 <!-- form element -->
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input name="name" type="text" class="form-control" placeholder="Tên"
-                                                required>
-                                        </div>
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <input name="name" type="text" class="form-control" placeholder="Tên" required>
                                     </div>
-
-                                    <div class="col-6">
-                                        <div class="form-group" style="width: 100%;">
-                                            <select name="relationship" style="width: 100%;">
-                                                <option value="Một Mình"> Bạn cô dâu</option>
-                                                <option value="Hai Mình">Bạn chú rể</option>
-                                                <option value="Ba Mình">Người nhà cô dâu</option>
-                                                <option value="Nhiều Mình">Người nhà chú rể</option>
-
-                                            </select>
-
-                                        </div>
+                                  </div>
+                            
+                                  <div class="col-6">
+                                    <div class="form-group" style="width: 100%;">
+                                      <select name="relationship" style="width: 100%;">
+                                        <option value="Bạn cô dâu"> Bạn cô dâu</option>
+                                        <option value="Bạn chú rể">Bạn chú rể</option>
+                                        <option value="Người nhà cô dâu">Người nhà cô dâu</option>
+                                        <option value="Người nhà chú rể">Người nhà chú rể</option>
+                                      </select>
                                     </div>
-                                    <div class="col-6">
-                                        <div class="form-group" style="width: 100%;">
-                                            <select name="passenger" style="width: 100%;">
-                                                <option value="Một Mình">Một Mình</option>
-                                                <option value="Hai Mình">Hai Mình</option>
-                                                <option value="Ba Mình">Ba Mình</option>
-                                                <option value="Nhiều Mình">Nhiều Mình</option>
-
-                                            </select>
-
-                                        </div>
+                                  </div>
+                                  <div class="col-6">
+                                    <div class="form-group" style="width: 100%;">
+                                      <select name="passenger" style="width: 100%;">
+                                        <option value="Một mình">Một mình</option>
+                                        <option value="Hai mình">Hai mình</option>
+                                        <option value="Ba mình">Ba mình</option>
+                                        <option value="Nhiều mình">Nhiều mình</option>
+                                      </select>
                                     </div>
-                                    <div class="col-md-12 mt-1 mb-2">
-                                        <div class="form-group">
-                                            <input class="m-1" type="radio" name="choice" value="Tiệc Cưới Nhà Gái"
-                                                checked><span>
-                                                Tiệc Cưới Nhà Gái
-                                            </span>
-                                            <input class="m-1" type="radio" name="choice" value="Tiệc Cưới Nhà Trai">
-                                            <span>
-                                                Tiệc Cưới Nhà Trai
-                                            </span>
-                                        </div>
+                                  </div>
+                                  <div class="col-md-12 mt-1 mb-2">
+                                    <div class="form-group">
+                                      <input class="m-1" type="radio" name="choice" value="Tiệc Cưới Nhà Gái" checked><span>
+                                        Tiệc Cưới Nhà Gái
+                                      </span>
+                                      <input class="m-1" type="radio" name="choice" value="Tiệc Cưới Nhà Trai"><span>
+                                        Tiệc Cưới Nhà Trai
+                                      </span>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" cols="30" rows="7"
-                                                class="form-control"
-                                                placeholder="Gửi Lời Nhắn Cho Cô Dâu Chú Rể"></textarea>
-                                        </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Gửi Lời Nhắn Cho Cô Dâu Chú Rể"></textarea>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input name="submit" type="submit" class="btn buttono" value="Gửi">
-                                        </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <input name="submit" type="submit" class="btn buttono" value="Gửi">
                                     </div>
+                                  </div>
                                 </div>
-                            </form>
+                              </form>
                         </div>
                     </div>
                 </div>

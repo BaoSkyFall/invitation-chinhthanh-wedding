@@ -367,4 +367,28 @@ function downloadQR(index) {
     link.click();
     document.body.removeChild(link);
 }
+window.googleDocCallback = function () { return true; };
 
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const formObject = {};
+    formData.forEach((value, key) => formObject[key] = value);
+
+    fetch('https://script.google.com/macros/s/AKfycbwdWkuWppzfkF89Z0eoHuE-Wyf1XSrYsDidDYuoAN6dZYAza1nUZpTVIeHDMG3-v5vgQQ/exec', {  // Replace with your Web App URL
+      method: 'POST',
+      body: JSON.stringify(formObject),
+      headers: { 'Content-Type': 'application/json' }
+    }).then(response => response.json())
+      .then(data => {
+        if (data.result === 'success') {
+          document.querySelector('.contact__msg').style.display = 'block';
+          document.getElementById('contactForm').reset();
+        } else {
+          alert('Error submitting form');
+        }
+      }).catch(error => {
+        console.error('Error:', error);
+      });
+  });
