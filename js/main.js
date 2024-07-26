@@ -376,11 +376,13 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const formObject = {};
     formData.forEach((value, key) => formObject[key] = value);
 
-    fetch('https://script.google.com/macros/s/AKfycbwdWkuWppzfkF89Z0eoHuE-Wyf1XSrYsDidDYuoAN6dZYAza1nUZpTVIeHDMG3-v5vgQQ/exec', {  // Replace with your Web App URL
-      method: 'POST',
+    fetch('https://script.google.com/macros/s/AKfycbxiSyXJX6dZ6Ci9Td4mHQ5h7O51APk_VCeN84uyUJDtoWRwx1kFNw5sEpaaIXRbRuPCIQ/exec', {  // Replace with your Web App URL
+        redirect: "follow",  
+    method: 'POST',
       body: JSON.stringify(formObject),
-      headers: { 'Content-Type': 'application/json' }
-    }).then(response => response.json())
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },    }).then(response => response.json())
       .then(data => {
         if (data.result === 'success') {
           document.querySelector('.contact__msg').style.display = 'block';
