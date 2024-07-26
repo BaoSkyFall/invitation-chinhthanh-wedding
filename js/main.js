@@ -21,8 +21,8 @@
         }
     };
     // Preloader
-    $(window).load(function() {
-    $('.preloader').fadeOut("slow");
+    $(window).load(function () {
+        $('.preloader').fadeOut("slow");
     });
     // Animations
     var contentWayPoint = function () {
@@ -57,8 +57,8 @@
             offset: '85%'
         });
     };
-    
-    
+
+
     // Burger Menu 
     var burgerMenu = function () {
         $('.js-oliven-nav-toggle').on('click', function (event) {
@@ -92,8 +92,8 @@
             }
         });
     };
-    
-    
+
+
     // Document on load.
     $(function () {
         contentWayPoint();
@@ -118,7 +118,8 @@
         , responsive: {
             0: {
                 items: 1
-            , }
+                ,
+            }
             , 600: {
                 items: 2
             }
@@ -138,7 +139,8 @@
         , responsive: {
             0: {
                 items: 1
-            , }
+                ,
+            }
             , 600: {
                 items: 1
             }
@@ -171,188 +173,159 @@
     });
     // Smooth Scrolling
     $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function (event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function () {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        };
+                    });
+                }
+            }
         });
-      }
-    }
-  });
     // Gallery 
     $(window).on("load", function () {
-    var e = $(".gallery-filter")
-        , a = $("#gallery-filter");
-    e.isotope({
-        filter: "*"
-        , layoutMode: "masonry"
-        , animationOptions: {
-            duration: 750
-            , easing: "linear"
-        }
-    }), a.find("a").on("click", function () {
-        var o = $(this).attr("data-filter");
-        return a.find("a").removeClass("active"), $(this).addClass("active"), e.isotope({
-            filter: o
+        var e = $(".gallery-filter")
+            , a = $("#gallery-filter");
+        e.isotope({
+            filter: "*"
+            , layoutMode: "masonry"
             , animationOptions: {
-                animationDuration: 750
+                duration: 750
                 , easing: "linear"
-                , queue: !1
             }
-        }), !1
-    })
-});
+        }), a.find("a").on("click", function () {
+            var o = $(this).attr("data-filter");
+            return a.find("a").removeClass("active"), $(this).addClass("active"), e.isotope({
+                filter: o
+                , animationOptions: {
+                    animationDuration: 750
+                    , easing: "linear"
+                    , queue: !1
+                }
+            }), !1
+        })
+    });
     // Magnific Popup
     $(".img-zoom").magnificPopup({
-    type: "image"
-    , closeOnContentClick: !0
-    , mainClass: "mfp-fade"
-    , gallery: {
-        enabled: !0
-        , navigateByImgClick: !0
-        , preload: [0, 1]
-    }
-});
-    
-     // RSVP FORM 
-    var form = $('.contact__form'),
-        message = $('.contact__msg'),
-        form_data;
-    function done_func(response) {
-        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-        form.find('input:not([type="submit"]), textarea').val('');
-    }
-    function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-    }
-    form.submit(function (e) {
-        e.preventDefault();
-        form_data = $(this).serialize();
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: form_data
-        })
-        .done(done_func)
-        .fail(fail_func);
+        type: "image"
+        , closeOnContentClick: !0
+        , mainClass: "mfp-fade"
+        , gallery: {
+            enabled: !0
+            , navigateByImgClick: !0
+            , preload: [0, 1]
+        }
     });
-    
-    
-    
+
+
+
+
+
 }());
 
 // Countdown wedding
-  (function () {
-  const second = 1000,
+(function () {
+    const second = 1000,
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-  let birthday = "Sep 07, 2024 09:00:00",
-      countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
-        let now = new Date().getTime(),
-            distance = countDown - now;
+    let birthday = "Sep 07, 2024 09:00:00",
+        countDown = new Date(birthday).getTime(),
+        x = setInterval(function () {
+            let now = new Date().getTime(),
+                distance = countDown - now;
 
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            document.getElementById("days").innerText = Math.floor(distance / (day)),
+                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
-        if (distance < 0) {
-          let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown"),
-              content = document.getElementById("content");
+            //do something later when date is reached
+            if (distance < 0) {
+                let headline = document.getElementById("headline"),
+                    countdown = document.getElementById("countdown"),
+                    content = document.getElementById("content");
 
-          headline.innerText = "It's our wedding!";
-          countdown.style.display = "none";
-          content.style.display = "block";
+                headline.innerText = "It's our wedding!";
+                countdown.style.display = "none";
+                content.style.display = "block";
 
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-     // IDs for the bride and groom
-     const brideId = '100010193289535'; // Replace with actual bride's Facebook ID
-     const groomId = '100009013866445'; // Replace with actual groom's Facebook ID
+                clearInterval(x);
+            }
+            //seconds
+        }, 0)
+    // IDs for the bride and groom
+    const brideId = '100010193289535'; // Replace with actual bride's Facebook ID
+    const groomId = '100009013866445'; // Replace with actual groom's Facebook ID
 
-     // Detect the user's device
-     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    // Detect the user's device
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-     if (/android/i.test(userAgent)) {
-         // Android
-         document.getElementById('facebook-bride').href = `fb://facewebmodal/f?href=https://www.facebook.com/${brideId}`;
-         document.getElementById('facebook-groom').href = `fb://facewebmodal/f?href=https://www.facebook.com/${groomId}`;
-         document.getElementById('messenger-bride').href = `fb-messenger://user/${brideId}`;
-         document.getElementById('messenger-groom').href = `fb-messenger://user/${groomId}`;
-     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-         // iOS
-         document.getElementById('facebook-bride').href = `fb://profile/${brideId}`;
-         document.getElementById('facebook-groom').href = `fb://profile/${groomId}`;
-         document.getElementById('messenger-bride').href = `fb-messenger://user-thread/${brideId}`;
-         document.getElementById('messenger-groom').href = `fb-messenger://user-thread/${groomId}`;
-     } else {
-         // Laptop or other devices
-         document.getElementById('facebook-bride').href = `https://www.facebook.com/${brideId}`;
-         document.getElementById('facebook-groom').href = `https://www.facebook.com/${groomId}`;
-         document.getElementById('messenger-bride').href = `https://www.messenger.com/t/${brideId}`;
-         document.getElementById('messenger-groom').href = `https://www.messenger.com/t/${groomId}`;
-     }
-  }());
+    if (/android/i.test(userAgent)) {
+        // Android
+        document.getElementById('facebook-bride').href = `fb://facewebmodal/f?href=https://www.facebook.com/${brideId}`;
+        document.getElementById('facebook-groom').href = `fb://facewebmodal/f?href=https://www.facebook.com/${groomId}`;
+        document.getElementById('messenger-bride').href = `fb-messenger://user/${brideId}`;
+        document.getElementById('messenger-groom').href = `fb-messenger://user/${groomId}`;
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        // iOS
+        document.getElementById('facebook-bride').href = `fb://profile/${brideId}`;
+        document.getElementById('facebook-groom').href = `fb://profile/${groomId}`;
+        document.getElementById('messenger-bride').href = `fb-messenger://user-thread/${brideId}`;
+        document.getElementById('messenger-groom').href = `fb-messenger://user-thread/${groomId}`;
+    } else {
+        // Laptop or other devices
+        document.getElementById('facebook-bride').href = `https://www.facebook.com/${brideId}`;
+        document.getElementById('facebook-groom').href = `https://www.facebook.com/${groomId}`;
+        document.getElementById('messenger-bride').href = `https://www.messenger.com/t/${brideId}`;
+        document.getElementById('messenger-groom').href = `https://www.messenger.com/t/${groomId}`;
+    }
+}());
 
-  function copySTK(index) {
+function copySTK(index) {
     // Text to be copied
-    const textToCopy = index == 1? '938443767' : '00000186678';
-    
+    const textToCopy = index == 1 ? '938443767' : '00000186678';
+
     // Create a temporary input element
     const tempInput = document.createElement('input');
     tempInput.value = textToCopy;
     document.body.appendChild(tempInput);
-    
+
     // Select the text
     tempInput.select();
     tempInput.setSelectionRange(0, 99999); // For mobile devices
-    
+
     // Copy the text
     document.execCommand('copy');
-    
+
     // Remove the temporary input element
     document.body.removeChild(tempInput);
-    
+
     // Change the button text
     const copyButton = document.querySelector('input[value="Copy STK"]');
     copyButton.value = "Đã Copy";
@@ -369,46 +342,58 @@ function downloadQR(index) {
 }
 window.googleDocCallback = function () { return true; };
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.getElementById('contactForm').addEventListener('submit', function (e) {
 
-    const formData = new FormData(this);
-    const formObject = {};
-    formData.forEach((value, key) => formObject[key] = value);
-    $.ajax({
-        url: 'https://script.google.com/macros/s/AKfycbxDkOrsswBllM1dIYN6wOvWY9pSm1yYPN_pmoJ1yi5Wm8fKiHke6NOdJVdYb8n6cgX1dQ/exec',  // Replace with your Web App URL
-        method: 'POST',
-        crossDomain: true,
-        data: JSON.stringify(formObject),
-        contentType: 'text/plain;charset=utf-8',
-        success: function(data) {
-          console.log(data);
-          if (data.result === 'success') {
-            $('.contact__msg').show();
-            $('#contactForm')[0].reset();
-          } else {
-            alert('Error submitting form');
-          }
-        },
-        error: function(error) {
-          console.error('Error:', error);
-        }
-      });
-    // fetch('https://script.google.com/macros/s/AKfycbzFEHuB9y1ol9GhsHLzoxsVwqPztqrjrzemcjnvSh6lv6xhf79GLZQlD4mWH4CDYKh5_Q/exec', {  // Replace with your Web App URL
-    //     redirect: "follow",  
-    // method: 'POST',
-    //   body: JSON.stringify(formObject),
-    //   headers: {
-    //     "Content-Type": "text/plain;charset=utf-8",
-    //   },    }).then(response => response.json())
-    //   .then(data => {
-    //     if (data.result === 'success') {
-    //       document.querySelector('.contact__msg').style.display = 'block';
-    //       document.getElementById('contactForm').reset();
-    //     } else {
-    //       alert('Error submitting form');
-    //     }
-    //   }).catch(error => {
-    //     console.error('Error:', error);
-    //   });
-  });
+    let isValid = true;
+    const nameField = $('input[name="name"]');
+    debugger;
+    if (nameField.val().trim() === '') {
+        nameField.next('.error-message').show();
+        isValid = false;
+    } else {
+        nameField.next('.error-message').hide();
+    }
+
+    if (isValid) {
+        const formData = $(this).serializeArray();
+        const formObject = {};
+        $.each(formData, function (_, field) {
+            formObject[field.name] = field.value;
+        });
+        e.preventDefault();
+        var contact__msg = $('.contact__msg');
+        contact__msg.show();
+        contact__msg.html('Đang gửi...');
+        contact__msg.removeClass('alert-success');
+        contact__msg.addClass('alert-warning');
+        formData.forEach((value, key) => formObject[key] = value);
+        $.ajax({
+            url: 'https://script.google.com/macros/s/AKfycbxDkOrsswBllM1dIYN6wOvWY9pSm1yYPN_pmoJ1yi5Wm8fKiHke6NOdJVdYb8n6cgX1dQ/exec',  // Replace with your Web App URL
+            method: 'POST',
+            crossDomain: true,
+            data: JSON.stringify(formObject),
+            contentType: 'text/plain;charset=utf-8',
+            success: function (data) {
+                console.log(data);
+                if (data.result === 'success') {
+                    $('.contact__msg').show();
+                    contact__msg.addClass('alert-success');
+                    contact__msg.removeClass('alert-warning');
+                    $('.contact__msg').html('Đã xác nhận tham dự thành công');
+                    setTimeout(() => {
+                        $('.contact__msg').hide();
+                        $('#contactForm')[0].reset();
+
+                    }, 5000)
+                } else {
+                    alert('Error submitting form');
+                }
+            },
+            error: function (error) {
+                console.error('Error:', error);
+            }
+        });
+
+    }
+
+});

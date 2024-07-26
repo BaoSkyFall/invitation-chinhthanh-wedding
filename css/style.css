@@ -2259,3 +2259,7 @@ body.offcanvason .oliven-nav-toggle {
     display: flex;
     gap:10px
 }
+.error-message {
+    color: red;
+    display: none;
+  }
