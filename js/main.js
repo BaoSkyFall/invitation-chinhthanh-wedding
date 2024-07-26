@@ -346,7 +346,6 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
     let isValid = true;
     const nameField = $('input[name="name"]');
-    debugger;
     if (nameField.val().trim() === '') {
         nameField.next('.error-message').show();
         isValid = false;
