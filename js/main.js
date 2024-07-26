@@ -375,22 +375,40 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const formData = new FormData(this);
     const formObject = {};
     formData.forEach((value, key) => formObject[key] = value);
-
-    fetch('https://script.google.com/macros/s/AKfycbzFEHuB9y1ol9GhsHLzoxsVwqPztqrjrzemcjnvSh6lv6xhf79GLZQlD4mWH4CDYKh5_Q/exec', {  // Replace with your Web App URL
-        redirect: "follow",  
-    method: 'POST',
-      body: JSON.stringify(formObject),
-      headers: {
-        "Content-Type": "text/plain;charset=utf-8",
-      },    }).then(response => response.json())
-      .then(data => {
-        if (data.result === 'success') {
-          document.querySelector('.contact__msg').style.display = 'block';
-          document.getElementById('contactForm').reset();
-        } else {
-          alert('Error submitting form');
+    $.ajax({
+        url: 'https://script.google.com/macros/s/AKfycbxXu_STv3QM86UTRJG3Je4C-cJWxcEr4jtY28Q2R7PKCK-7vQo0TqWXHeg4j0-0WvTDkQ/exec',  // Replace with your Web App URL
+        method: 'POST',
+        crossDomain: true,
+        data: JSON.stringify(formObject),
+        contentType: 'text/plain;charset=utf-8',
+        success: function(data) {
+          console.log(data);
+          if (data.result === 'success') {
+            $('.contact__msg').show();
+            $('#contactForm')[0].reset();
+          } else {
+            alert('Error submitting form');
+          }
+        },
+        error: function(error) {
+          console.error('Error:', error);
         }
-      }).catch(error => {
-        console.error('Error:', error);
       });
+    // fetch('https://script.google.com/macros/s/AKfycbzFEHuB9y1ol9GhsHLzoxsVwqPztqrjrzemcjnvSh6lv6xhf79GLZQlD4mWH4CDYKh5_Q/exec', {  // Replace with your Web App URL
+    //     redirect: "follow",  
+    // method: 'POST',
+    //   body: JSON.stringify(formObject),
+    //   headers: {
+    //     "Content-Type": "text/plain;charset=utf-8",
+    //   },    }).then(response => response.json())
+    //   .then(data => {
+    //     if (data.result === 'success') {
+    //       document.querySelector('.contact__msg').style.display = 'block';
+    //       document.getElementById('contactForm').reset();
+    //     } else {
+    //       alert('Error submitting form');
+    //     }
+    //   }).catch(error => {
+    //     console.error('Error:', error);
+    //   });
   });
