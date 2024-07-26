@@ -1266,8 +1266,14 @@ body.offcanvason .oliven-nav-toggle {
   #countdown li span {
     font-size: 60px;
   }
-}
 
+}
+@media all and (min-width: 768px) {
+    #countdown {
+        background-size: 150vw 150vh;
+      }
+  
+  }
 
 /* ======= Our Story style ======= */
 .story .story-img {
