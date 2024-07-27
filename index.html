@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <!-- Add Firebase SDK -->
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -55,6 +62,7 @@
                 </p>
             </div>
         </aside>
+        
         <!-- Content Section -->
         <div id="oliven-main">
             <!-- Header Video -->
@@ -62,7 +70,8 @@
                 <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
                 <div class="video-fullscreen-video" data-overlay-dark="5">
                     <video playsinline="" autoplay="" loop="" muted="">
-                        <source src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/video1.mp4" type="video/mp4" autoplay="" loop="" muted="">
+                        <source src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/video1.mp4"
+                            type="video/mp4" autoplay="" loop="" muted="">
                         <source src="https://duruthemes.com/demo/html/olivia-enrico/video.webm" type="video/webm"
                             autoplay="" loop="" muted="">
                     </video>
@@ -218,17 +227,26 @@
                                 chúng mình cũng không ngoại lệ. "Gặp nhiều người ở thời điểm khác nhau cũng không huy
                                 hoàng bằng gặp đúng người đúng thời điểm."
                             </p>
-                            <p>Khi nhớ về lần đầu tiên chúng mình biết đến nhau vào tháng 6 năm 2021, giữa lúc giãn cách xã hội và những hạn chế nghiêm ngặt. 
-                                Trong những ngày giãn cách, chú rể tình cờ xem được một <a class=""  style="color:#BD945A;font-weight: bold;" href="https://vt.tiktok.com/ZSYcmFdj9/" target="_blank">clip cô dâu viral triệu view trên kênh TikTok ahyansg. </a>
+                            <p>Khi nhớ về lần đầu tiên chúng mình biết đến nhau vào tháng 6 năm 2021, giữa lúc giãn
+                                cách xã hội và những hạn chế nghiêm ngặt.
+                                Trong những ngày giãn cách, chú rể tình cờ xem được một <a class=""
+                                    style="color:#BD945A;font-weight: bold;" href="https://vt.tiktok.com/ZSYcmFdj9/"
+                                    target="_blank">clip cô dâu viral triệu view trên kênh TikTok ahyansg. </a>
                                 Clip không chỉ gây ấn tượng bởi sự hài hước mà còn vì cá tính của cô dâu. 1
-                                Với nghiệp vụ của bản thân thì Chú rể đã dễ dàng tìm thấy thông tin của cô dâu, và từ đó chúng mình bắt đầu trò chuyện. 
-                                Sự kết nối tình cờ này đã mang lại cho chúng mình niềm an ủi và động viên lớn lao trong những ngày tháng đầy thử thách. 
-                                Dần dần, từ những cuộc trò chuyện trực tuyến, chúng tôi hẹn gặp nhau ngoài đời thực và một mối tình đẹp giữa mùa dịch đã nảy nở.</p>
+                                Với nghiệp vụ của bản thân thì Chú rể đã dễ dàng tìm thấy thông tin của cô
+                                dâu, và từ đó chúng mình bắt đầu trò chuyện.
+                                Sự kết nối tình cờ này đã mang lại cho chúng mình niềm an ủi và động viên lớn lao trong
+                                những ngày tháng đầy thử thách.
+                                Dần dần, từ những cuộc trò chuyện trực tuyến, chúng tôi hẹn gặp nhau ngoài đời thực và
+                                một mối tình đẹp giữa mùa dịch đã nảy nở.</p>
                             <p>Dù phải trải qua nhiều thử thách và khó khăn, tình yêu của chúng mình ngày
-                                càng mạnh mẽ và bền vững. Một trong những chướng ngại lớn nhất mà chúng mình phải đối mặt
-                                là sự khác biệt về tôn giáo và vùng miền. Ban đầu, điều này gây ra không ít khó khăn và áp lực từ chính bản thân và gia đình. 
-                                Tuy nhiên, nhờ tình yêu chân thành và sự kiên nhẫn cùng với sự ủng hộ của đôi bên gia đình, bạn bè, 
-                                chúng mình đã dần dần vượt qua mọi rào cản. Sau hơn 3 năm đồng hành và chia sẻ, 
+                                càng mạnh mẽ và bền vững. Một trong những chướng ngại lớn nhất mà chúng mình phải đối
+                                mặt
+                                là sự khác biệt về tôn giáo và vùng miền. Ban đầu, điều này gây ra không ít khó khăn
+                                và áp lực từ chính bản thân và gia đình.
+                                Tuy nhiên, nhờ tình yêu chân thành và sự kiên nhẫn cùng với sự ủng hộ của đôi bên
+                                gia đình, bạn bè,
+                                chúng mình đã dần dần vượt qua mọi rào cản. Sau hơn 3 năm đồng hành và chia sẻ,
                                 chúng mình quyết định tiến tới hôn nhân để cùng nhau xây dựng một tổ ấm trọn vẹn.
                             </p>
                             <!-- <h4>Ngày 25/06/2021, Lần Đầu Gặp Nhau</h4>
@@ -248,7 +266,8 @@
             </div>
 
             <!-- See you -->
-            <div id="seeyou" class="seeyou section-padding bg-img bg-fixed" style="background-position: center center;" data-background="images/banner-3.jpg">
+            <div id="seeyou" class="seeyou section-padding bg-img bg-fixed" style="background-position: center center;"
+                data-background="images/banner-3.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="section-head col-md-12 text-center" style="margin-top: 130px;"> <span><i
@@ -258,6 +277,104 @@
                             <h3><i class="ti-line-dashed"></i></h3>
 
                             <h3>Lễ Thành Hôn <br> 14.09.2024</h3> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wishing -->
+            <div id="rsvp-wishing" class="section-padding bg-img bg-fixed" data-background="images/gallery/4.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                        </div>
+                        <div class="col-md-6 offset-md-3 bg-white p-40 m-0"> <span
+                                class="oliven-title-meta text-center">Cảm ơn bạn rất nhiều vì đã gửi những lời chúc
+                                tốt đẹp nhất đến đám cưới của chúng mình!
+                            </span>
+                            <h2 class="oliven-title text-center">Sổ Lưu Bút</h2>
+                            <br>
+                            <form id="wishingForm" method="post">
+                                <!-- form message -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="alert alert-success contact__msg_wishing" style="display: none"
+                                            role="alert"> Đã gửi lời chúc thành công. </div>
+                                    </div>
+                                </div>
+                                <!-- form element -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input name="nameWishing" type="text" class="form-control"
+                                                placeholder="Họ Tên" required>
+                                            <div class="error-message">Vui lòng nhập tên</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group" style="width: 100%;">
+                                            <select name="relationship" style="width: 100%;">
+                                                <option value="Bạn cô dâu"> Bạn cô dâu</option>
+                                                <option value="Bạn chú rể">Bạn chú rể</option>
+                                                <option value="Người nhà cô dâu">Người nhà cô dâu</option>
+                                                <option value="Người nhà chú rể">Người nhà chú rể</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group flex-column gap-1">
+                                            <textarea name="messageWishing" id="message" cols="30" rows="7"
+                                                class="form-control"
+                                                placeholder="Gửi Lời Chúc Cho Cô Dâu Chú Rể"></textarea>
+                                            <div class="error-message">Vui lòng nhập lời chúc</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group" style="width: 100%;">
+                                            <select name="suggestion" style="width: 100%;">
+                                                <option value="">Lời chúc gợi ý sẵn</option>
+                                                <option
+                                                    value="Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc.">
+                                                    Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc.
+                                                </option>
+                                                <option
+                                                    value="Happy Wedding, chúc 2 vk ck trăm năm hạnh phúc, sớm sinh quý tử nhé.">
+                                                    Happy Wedding, chúc 2 vk ck trăm năm hạnh phúc, sớm sinh quý tử nhé.
+                                                </option>
+                                                <option value="Trăm năm hạnh phúc nhé 2 vợ chồng 😍😍">Trăm năm hạnh
+                                                    phúc nhé 2 vợ chồng 😍😍.</option>
+                                                <option value="Chúc mừng hạnh phúc đôi bạn trẻ">Chúc mừng hạnh phúc đôi
+                                                    bạn trẻ.</option>
+                                                <option value="HAPPY WEDDING">HAPPY WEDDING</option>
+                                                <option
+                                                    value="Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu bạc răng long, sớm có thiên thần nhỏ nhé!">
+                                                    Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu bạc răng
+                                                    long, sớm có thiên thần nhỏ nhé!</option>
+                                                <option
+                                                    value="Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc sống mới của cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!">
+                                                    Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc sống mới của
+                                                    cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!</option>
+                                                <option
+                                                    value="Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc hai bạn một cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung, hạnh phúc lâu dài.">
+                                                    Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc hai bạn một
+                                                    cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung,
+                                                    hạnh phúc lâu dài.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input id="submit" name="submit" type="submit" class="btn buttono"
+                                                value="Gửi">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
 
                         </div>
                     </div>
@@ -362,7 +479,8 @@
                         <div class="col-md-4 gallery-item ceremony">
                             <a href="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/1.jpg" class="img-zoom">
                                 <div class="gallery-box">
-                                    <div class="gallery-img"> <img  src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/1.jpg"
+                                    <div class="gallery-img"> <img
+                                            src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/1.jpg"
                                             class="img-fluid mx-auto d-block" alt=""> </div>
                                     <div class="gallery-detail">
                                         <h4 class="mb-0">Wedding Ceremony</h4>
@@ -373,7 +491,8 @@
                         <div class="col-md-4 gallery-item party">
                             <a href="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/2.jpg" class="img-zoom">
                                 <div class="gallery-box">
-                                    <div class="gallery-img"> <img  src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/2.jpg"
+                                    <div class="gallery-img"> <img
+                                            src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/2.jpg"
                                             class="img-fluid mx-auto d-block" alt=""> </div>
                                     <div class="gallery-detail">
                                         <h4 class="mb-0">Wedding Party</h4>
@@ -384,7 +503,8 @@
                         <div class="col-md-4 gallery-item ceremony">
                             <a href="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/3.jpg" class="img-zoom">
                                 <div class="gallery-box">
-                                    <div class="gallery-img"> <img  src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/3.jpg"
+                                    <div class="gallery-img"> <img
+                                            src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/3.jpg"
                                             class="img-fluid mx-auto d-block" alt=""> </div>
                                     <div class="gallery-detail">
                                         <h4 class="mb-0">Wedding Ceremony</h4>
@@ -395,7 +515,8 @@
                         <div class="col-md-4 gallery-item party">
                             <a href="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/4.jpg" class="img-zoom">
                                 <div class="gallery-box">
-                                    <div class="gallery-img"> <img  src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/4.jpg"
+                                    <div class="gallery-img"> <img
+                                            src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/4.jpg"
                                             class="img-fluid mx-auto d-block" alt=""> </div>
                                     <div class="gallery-detail">
                                         <h4 class="mb-0">Wedding Party</h4>
@@ -406,7 +527,8 @@
                         <div class="col-md-4 gallery-item ceremony">
                             <a href="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/5.jpg" class="img-zoom">
                                 <div class="gallery-box">
-                                    <div class="gallery-img"> <img  src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/5.jpg"
+                                    <div class="gallery-img"> <img
+                                            src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/5.jpg"
                                             class="img-fluid mx-auto d-block" alt=""> </div>
                                     <div class="gallery-detail">
                                         <h4 class="mb-0">Wedding Ceremony</h4>
@@ -417,7 +539,8 @@
                         <div class="col-md-4 gallery-item party">
                             <a href="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/6.jpg" class="img-zoom">
                                 <div class="gallery-box">
-                                    <div class="gallery-img"> <img  src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/6.jpg"
+                                    <div class="gallery-img"> <img
+                                            src="https://s3-ec2-baoit128.s3.ap-southeast-2.amazonaws.com/6.jpg"
                                             class="img-fluid mx-auto d-block" alt=""> </div>
                                     <div class="gallery-detail">
                                         <h4 class="mb-0">Wedding Party</h4>
@@ -440,62 +563,68 @@
                             <form class="contact__form" id="contactForm" method="post">
                                 <!-- form message -->
                                 <div class="row">
-                                  <div class="col-12">
-                                    <div class="alert alert-success contact__msg" style="display: none" role="alert"> Đã gửi xác nhận thành công. </div>
-                                  </div>
+                                    <div class="col-12">
+                                        <div class="alert alert-success contact__msg" style="display: none"
+                                            role="alert"> Đã gửi xác nhận thành công. </div>
+                                    </div>
                                 </div>
                                 <!-- form element -->
                                 <div class="row">
-                                  <div class="col-md-12">
-                                    <div class="form-group">
-                                      <input name="name" type="text" class="form-control" placeholder="Tên" required>
-                                      <div class="error-message">Vui lòng nhập tên</div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input name="name" type="text" class="form-control" placeholder="Họ Tên"
+                                                required>
+                                            <div class="error-message">Vui lòng nhập tên</div>
 
+                                        </div>
                                     </div>
-                                  </div>
-                            
-                                  <div class="col-6">
-                                    <div class="form-group" style="width: 100%;">
-                                      <select name="relationship" style="width: 100%;">
-                                        <option value="Bạn cô dâu"> Bạn cô dâu</option>
-                                        <option value="Bạn chú rể">Bạn chú rể</option>
-                                        <option value="Người nhà cô dâu">Người nhà cô dâu</option>
-                                        <option value="Người nhà chú rể">Người nhà chú rể</option>
-                                      </select>
+
+                                    <div class="col-6">
+                                        <div class="form-group" style="width: 100%;">
+                                            <select name="relationship" style="width: 100%;">
+                                                <option value="Bạn cô dâu"> Bạn cô dâu</option>
+                                                <option value="Bạn chú rể">Bạn chú rể</option>
+                                                <option value="Người nhà cô dâu">Người nhà cô dâu</option>
+                                                <option value="Người nhà chú rể">Người nhà chú rể</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="col-6">
-                                    <div class="form-group" style="width: 100%;">
-                                      <select name="passenger" style="width: 100%;">
-                                        <option value="Một mình">Một mình</option>
-                                        <option value="Hai mình">Hai mình</option>
-                                        <option value="Ba mình">Ba mình</option>
-                                        <option value="Nhiều mình">Nhiều mình</option>
-                                      </select>
+                                    <div class="col-6">
+                                        <div class="form-group" style="width: 100%;">
+                                            <select name="passenger" style="width: 100%;">
+                                                <option value="Một mình">Một mình</option>
+                                                <option value="Hai mình">Hai mình</option>
+                                                <option value="Ba mình">Ba mình</option>
+                                                <option value="Nhiều mình">Nhiều mình</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="col-md-12 mt-1 mb-2">
-                                    <div class="form-group">
-                                      <input class="m-1" type="radio" name="choice" value="Tiệc Cưới Nhà Gái" checked><span>
-                                        Tiệc Cưới Nhà Gái
-                                      </span>
-                                      <input class="m-1" type="radio" name="choice" value="Tiệc Cưới Nhà Trai"><span>
-                                        Tiệc Cưới Nhà Trai
-                                      </span>
+                                    <div class="col-md-12 mt-1 mb-2">
+                                        <div class="form-group">
+                                            <input class="m-1" type="radio" name="choice" value="Tiệc Cưới Nhà Gái"
+                                                checked><span>
+                                                Tiệc Cưới Nhà Gái
+                                            </span>
+                                            <input class="m-1" type="radio" name="choice"
+                                                value="Tiệc Cưới Nhà Trai"><span>
+                                                Tiệc Cưới Nhà Trai
+                                            </span>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="col-md-12">
-                                    <div class="form-group">
-                                      <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Gửi Lời Nhắn Cho Cô Dâu Chú Rể"></textarea>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" cols="30" rows="7"
+                                                class="form-control"
+                                                placeholder="Gửi Lời Nhắn Cho Cô Dâu Chú Rể"></textarea>
+                                        </div>
                                     </div>
-                                  </div>
-                                  <div class="col-md-12">
-                                    <div class="form-group">
-                                      <input name="submit" type="submit" class="btn buttono" value="Gửi">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input name="submit" type="submit" class="btn buttono" value="Gửi">
+                                        </div>
                                     </div>
-                                  </div>
                                 </div>
-                              </form>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -590,6 +719,12 @@
                 </div>
             </div>
         </div>
+        <!-- Add Firebase SDK -->
+        <!-- Toastr CDN for notifications -->
+        <!-- Add Firebase SDK -->
+        <!-- Toastr CDN for notifications -->
+        
+
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>
@@ -600,7 +735,11 @@
         <script src="js/isotope.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+
         <script src="js/main.js"></script>
+        <script  type="module"   src="js/firebase-app.js">
+             </script>
+
     </div>
 </body>
 

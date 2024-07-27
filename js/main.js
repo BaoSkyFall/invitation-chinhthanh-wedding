@@ -367,7 +367,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
         contact__msg.addClass('alert-warning');
         formData.forEach((value, key) => formObject[key] = value);
         $.ajax({
-            url: 'https://script.google.com/macros/s/AKfycbxDkOrsswBllM1dIYN6wOvWY9pSm1yYPN_pmoJ1yi5Wm8fKiHke6NOdJVdYb8n6cgX1dQ/exec',  // Replace with your Web App URL
+            url: 'https://script.google.com/macros/s/AKfycbyRTPAO58gux_MC-13VKUny8Axh2vFQuKOIG-9pDeM44UTXQjQJ3AGw48yH6zJYYoKAgg/exec',  // Replace with your Web App URL
             method: 'POST',
             crossDomain: true,
             data: JSON.stringify(formObject),
@@ -396,3 +396,4 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     }
 
 });
+
