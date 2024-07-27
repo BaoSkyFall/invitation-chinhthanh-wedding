@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <!-- Add Firebase SDK -->
-        <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
-        <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js"></script>
-        <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js"></script>
-        <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js"></script>
+    <!-- Add Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -62,7 +62,7 @@
                 </p>
             </div>
         </aside>
-        
+
         <!-- Content Section -->
         <div id="oliven-main">
             <!-- Header Video -->
@@ -282,104 +282,8 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Wishing -->
-            <div id="rsvp-wishing" class="section-padding bg-img bg-fixed" data-background="images/gallery/4.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            
-                        </div>
-                        <div class="col-md-6 offset-md-3 bg-white p-40 m-0"> <span
-                                class="oliven-title-meta text-center">Cảm ơn bạn rất nhiều vì đã gửi những lời chúc
-                                tốt đẹp nhất đến đám cưới của chúng mình!
-                            </span>
-                            <h2 class="oliven-title text-center">Sổ Lưu Bút</h2>
-                            <br>
-                            <form id="wishingForm" method="post">
-                                <!-- form message -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="alert alert-success contact__msg_wishing" style="display: none"
-                                            role="alert"> Gửi thành công. Bạn có thể tải lại trang để xem lời chúc của bạn</div>
-                                    </div>
-                                </div>
-                                <!-- form element -->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input name="nameWishing" type="text" class="form-control"
-                                                placeholder="Họ Tên" required>
-                                            <div class="error-message">Vui lòng nhập tên</div>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-12">
-                                        <div class="form-group" style="width: 100%;">
-                                            <select name="relationship" style="width: 100%;">
-                                                <option value="Bạn cô dâu"> Bạn cô dâu</option>
-                                                <option value="Bạn chú rể">Bạn chú rể</option>
-                                                <option value="Người nhà cô dâu">Người nhà cô dâu</option>
-                                                <option value="Người nhà chú rể">Người nhà chú rể</option>
-                                            </select>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-md-12">
-                                        <div class="form-group flex-column gap-1">
-                                            <textarea name="messageWishing" id="message" cols="30" rows="7"
-                                                class="form-control"
-                                                placeholder="Gửi Lời Chúc Cho Cô Dâu Chú Rể"></textarea>
-                                            <div class="error-message">Vui lòng nhập lời chúc</div>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group" style="width: 100%;">
-                                            <select name="suggestion" style="width: 100%;">
-                                                <option value="">Lời chúc gợi ý sẵn</option>
-                                                <option
-                                                    value="Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc.">
-                                                    Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc.
-                                                </option>
-                                                <option
-                                                    value="Happy Wedding, chúc 2 vk ck trăm năm hạnh phúc, sớm sinh quý tử nhé.">
-                                                    Happy Wedding, chúc 2 vk ck trăm năm hạnh phúc, sớm sinh quý tử nhé.
-                                                </option>
-                                                <option value="Trăm năm hạnh phúc nhé 2 vợ chồng 😍😍">Trăm năm hạnh
-                                                    phúc nhé 2 vợ chồng 😍😍.</option>
-                                                <option value="Chúc mừng hạnh phúc đôi bạn trẻ">Chúc mừng hạnh phúc đôi
-                                                    bạn trẻ.</option>
-                                                <option value="HAPPY WEDDING">HAPPY WEDDING</option>
-                                                <option
-                                                    value="Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu bạc răng long, sớm có thiên thần nhỏ nhé!">
-                                                    Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu bạc răng
-                                                    long, sớm có thiên thần nhỏ nhé!</option>
-                                                <option
-                                                    value="Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc sống mới của cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!">
-                                                    Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc sống mới của
-                                                    cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!</option>
-                                                <option
-                                                    value="Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc hai bạn một cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung, hạnh phúc lâu dài.">
-                                                    Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc hai bạn một
-                                                    cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung,
-                                                    hạnh phúc lâu dài.</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <input id="submit" name="submit" type="submit" class="btn buttono"
-                                                value="Gửi">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Organization -->
             <div id="organization" class="organization section-padding bg-pink " style="padding-bottom: 0;">
                 <div class="container">
@@ -629,6 +533,105 @@
                     </div>
                 </div>
             </div>
+            <!-- Wishing -->
+            <div id="rsvp-wishing" class="section-padding bg-img bg-fixed" style="background-position: center center;"
+                data-background="images/gallery/4.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                        </div>
+                        <div class="col-md-6 offset-md-3 bg-white p-40 m-0"> <span
+                                class="oliven-title-meta text-center">Cảm ơn bạn rất nhiều vì đã gửi những lời chúc
+                                tốt đẹp nhất đến đám cưới của chúng mình!
+                            </span>
+                            <h2 class="oliven-title text-center">Sổ Lưu Bút</h2>
+                            <br>
+                            <form id="wishingForm" method="post">
+                                <!-- form message -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="alert alert-success contact__msg_wishing" style="display: none"
+                                            role="alert"> Gửi thành công. Bạn có thể tải lại trang để xem lời
+                                            chúc của bạn</div>
+                                    </div>
+                                </div>
+                                <!-- form element -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input name="nameWishing" type="text" class="form-control"
+                                                placeholder="Họ Tên" required>
+                                            <div class="error-message">Vui lòng nhập tên</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group" style="width: 100%;">
+                                            <select name="relationship" style="width: 100%;">
+                                                <option value="Bạn cô dâu"> Bạn cô dâu</option>
+                                                <option value="Bạn chú rể">Bạn chú rể</option>
+                                                <option value="Người nhà cô dâu">Người nhà cô dâu</option>
+                                                <option value="Người nhà chú rể">Người nhà chú rể</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group flex-column gap-1">
+                                            <textarea name="messageWishing" id="message" cols="30" rows="7"
+                                                class="form-control"
+                                                placeholder="Gửi Lời Chúc Cho Cô Dâu Chú Rể"></textarea>
+                                            <div class="error-message">Vui lòng nhập lời chúc</div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group" style="width: 100%;">
+                                            <select name="suggestion" style="width: 100%;">
+                                                <option value="">Lời chúc gợi ý sẵn</option>
+                                                <option
+                                                    value="Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc.">
+                                                    Chúc mừng hạnh phúc! Chúc hai bạn trăm năm hạnh phúc.
+                                                </option>
+                                                <option
+                                                    value="Happy Wedding, chúc 2 vk ck trăm năm hạnh phúc, sớm sinh quý tử nhé.">
+                                                    Happy Wedding, chúc 2 vk ck trăm năm hạnh phúc, sớm sinh quý tử nhé.
+                                                </option>
+                                                <option value="Trăm năm hạnh phúc nhé 2 vợ chồng 😍😍">Trăm năm hạnh
+                                                    phúc nhé 2 vợ chồng 😍😍.</option>
+                                                <option value="Chúc mừng hạnh phúc đôi bạn trẻ">Chúc mừng hạnh phúc đôi
+                                                    bạn trẻ.</option>
+                                                <option value="HAPPY WEDDING">HAPPY WEDDING</option>
+                                                <option
+                                                    value="Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu bạc răng long, sớm có thiên thần nhỏ nhé!">
+                                                    Chúc mừng hạnh phúc hai bạn. Chúc hai bạn bên nhau đầu bạc răng
+                                                    long, sớm có thiên thần nhỏ nhé!</option>
+                                                <option
+                                                    value="Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc sống mới của cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!">
+                                                    Một chương mới đã mở ra với hai bạn rồi. Tôi mong cuộc sống mới của
+                                                    cả hai sẽ tràn ngập hy vọng, hạnh phúc và niềm vui!</option>
+                                                <option
+                                                    value="Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc hai bạn một cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung, hạnh phúc lâu dài.">
+                                                    Gửi lời chúc mừng chân thành nhất tới bạn của tôi. Chúc hai bạn một
+                                                    cuộc sống thật tuyệt vời, hòa thuận, gắn bó son sắt, thủy chung,
+                                                    hạnh phúc lâu dài.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input id="submit" name="submit" type="submit" class="btn buttono"
+                                                value="Gửi">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="whenwhere" style="padding-bottom: 0; padding-top: 50px;" class="whenwhere section-padding bg-pink">
                 <div class="container">
                     <div class="row">
@@ -723,7 +726,7 @@
         <!-- Toastr CDN for notifications -->
         <!-- Add Firebase SDK -->
         <!-- Toastr CDN for notifications -->
-        
+
 
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
@@ -737,8 +740,8 @@
         <script src="js/owl.carousel.min.js"></script>
 
         <script src="js/main.js"></script>
-        <script  type="module"   src="js/firebase-app.js">
-             </script>
+        <script type="module" src="js/firebase-app.js">
+        </script>
 
     </div>
 </body>

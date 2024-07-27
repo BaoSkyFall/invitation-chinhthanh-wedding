@@ -25,6 +25,19 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 $(document).ready(function () {
+    $('input[name="name"]').on('input', function () {
+        const nameValue = $(this).val();
+        $('input[name="nameWishing"]').val(nameValue);
+    });
+    $('input[name="nameWishing"]').on('input', function () {
+        const nameValue = $(this).val();
+        $('input[name="name"]').val(nameValue);
+    });
+    $('select[name="relationship"]').on('change', function () {
+        const relationship = $(this).val();
+        $('select[name="relationship"]').val(relationship);
+
+    });
     $('#wishingForm').on('submit', async function (e) {
         e.preventDefault();
 
