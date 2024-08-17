@@ -542,13 +542,14 @@
                                     </div>
                                     <div class="col-md-12 mt-1 mb-2">
                                         <div class="form-group">
-                                            <input class="m-1" type="radio" name="choice" value="Tiệc Cưới Nhà Gái"
+                                            <input class="m-1" type="radio" name="choice" value="Tiệc Cưới ở Sài Gòn"
                                                 checked><span>
-                                                Tiệc Cưới Nhà Gái
+                                                    Tiệc Cưới ở Sài Gòn
+                                                    
                                             </span>
                                             <input class="m-1" type="radio" name="choice"
-                                                value="Tiệc Cưới Nhà Trai"><span>
-                                                Tiệc Cưới Nhà Trai
+                                                value="Tiệc Cưới ở Bình Phước"><span>
+                                                    Tiệc Cưới ở Bình Phước
                                             </span>
                                         </div>
                                     </div>
@@ -575,8 +576,9 @@
 
                         </div>
                         <div class="col-md-6 offset-md-3 mt-4 mt-lg-0 bg-white p-40 m-0"> <span
-                                class="oliven-title-meta text-center">Cảm ơn bạn rất nhiều vì đã gửi những lời chúc
-                                tốt đẹp nhất đến đám cưới của chúng mình!
+                                class="oliven-title-meta text-center">
+                                Hãy Gửi lời chúc Online để những lời tốt đẹp của bạn hiện lên tại đây nhé! 
+                                
                             </span>
                             <h2 class="oliven-title text-center">Sổ Lưu Bút</h2>
                             <br>
@@ -755,13 +757,36 @@
                     </div>
                 </div>
             </div>
+            <div id="music-control" class="ti-control-pause" style="font-size: 24px; cursor: pointer;color:white"></div>
+
         </div>
         <!-- Add Firebase SDK -->
         <!-- Toastr CDN for notifications -->
         <!-- Add Firebase SDK -->
         <!-- Toastr CDN for notifications -->
 
-
+        <audio id="backgroundMusic" src="mien-man.mp3" loop></audio>
+        <script>
+            // Get references to the audio element and the buttons
+            const music = document.getElementById('backgroundMusic');
+            // const playButton = document.getElementById('playMusic');
+            // const pauseButton = document.getElementById('pauseMusic');
+        
+            // // Automatically play the music when the page loads
+            window.addEventListener('load', () => {
+                music.play();
+            });
+        
+            // // Play music when the play button is clicked
+            // playButton.addEventListener('click', () => {
+            //     music.play();
+            // });
+        
+            // // Pause music when the pause button is clicked
+            // pauseButton.addEventListener('click', () => {
+            //     music.pause();
+            // });
+        </script>
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
         <script src="js/modernizr-2.6.2.min.js"></script>

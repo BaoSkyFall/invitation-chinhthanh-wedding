@@ -2263,3 +2263,22 @@ body.offcanvason .oliven-nav-toggle {
     color: red;
     display: none;
   }
+
+  #music-control {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffff;
+    z-index: 1000; /* Ensure it appears above other elements */
+    transition: 0.5s;
+    background: #BD945A;
+    margin: 15px 30px;
+    border-radius: 50%;
+    padding: 12px 15px;
+}
+
+#music-control:hover {
+    color: #000;
+}
