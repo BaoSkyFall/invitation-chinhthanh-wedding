@@ -87,6 +87,7 @@ $(document).ready(function () {
     const audioElement = document.getElementById('backgroundMusic');
 
     $('#music-control').on('click', function () {
+        this.style.animation = 'none'; // Stop the tada animation
         if (audioElement.paused) {
             audioElement.play();
             $(this).removeClass('ti-control-play').addClass('ti-control-pause');
