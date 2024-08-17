@@ -84,18 +84,18 @@ $(document).ready(function () {
         }
     });
     // const musicControl = $('#music-control')[0];
-    const audioElement = document.getElementById('backgroundMusic');
+    // const audioElement = document.getElementById('backgroundMusic');
 
-    $('#music-control').on('click', function () {
-        this.style.animation = 'none'; // Stop the tada animation
-        if (audioElement.paused) {
-            audioElement.play();
-            $(this).removeClass('ti-control-play').addClass('ti-control-pause');
-        } else {
-            audioElement.pause();
-            $(this).removeClass('ti-control-pause').addClass('ti-control-play');
-        }
-    });
+    // $('#music-control').on('click', function () {
+    //     this.style.animation = 'none'; // Stop the tada animation
+    //     if (audioElement.paused) {
+    //         audioElement.play();
+    //         $(this).removeClass('ti-control-play').addClass('ti-control-pause');
+    //     } else {
+    //         audioElement.pause();
+    //         $(this).removeClass('ti-control-pause').addClass('ti-control-play');
+    //     }
+    // });
     async function loadData() {
         try {
             const q = query(collection(db, 'rsvp_entries'), orderBy('timestamp', 'desc'));
