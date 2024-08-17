@@ -2678,9 +2678,9 @@ body.offcanvason .oliven-nav-toggle {
 }
 
 #song-name {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    color: white;
+    color: #BD945A;
     margin-bottom: 0;
 
 }
@@ -2701,12 +2701,16 @@ body.offcanvason .oliven-nav-toggle {
     width: 100px;
     margin: 0 10px;
     cursor: pointer;
+    color: #BD945A;
+
 }
 #play-pause-button {
     font-size: 24px;
     cursor: pointer;
     width: 50px;
     text-align: center;
+    color: #BD945A;
+
 }
 @keyframes rotate-disk {
     0% {
@@ -2725,4 +2729,47 @@ body.offcanvason .oliven-nav-toggle {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 80px;
+      -webkit-appearance: none;
+      background-color: #ffff;
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #ffff;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      cursor: ew-resize;
+      background: #ffff;
+      box-shadow: -80px 0 0 80px #BD945A;
+    }
+
+}
+
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #BD945A; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #ffff;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #BD945A; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #ffff;
 }
