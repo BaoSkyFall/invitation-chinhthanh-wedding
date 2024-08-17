@@ -298,12 +298,16 @@
         document.getElementById('facebook-groom').href = `fb://profile/${groomId}`;
         document.getElementById('messenger-bride').href = `fb-messenger://user-thread/${brideId}`;
         document.getElementById('messenger-groom').href = `fb-messenger://user-thread/${groomId}`;
+        const musicControl = $('#music-control');
+        musicControl.removeClass('ti-control-pause').addClass('ti-control-play');
     } else {
         // Laptop or other devices
         document.getElementById('facebook-bride').href = `https://www.facebook.com/${brideId}`;
         document.getElementById('facebook-groom').href = `https://www.facebook.com/${groomId}`;
         document.getElementById('messenger-bride').href = `https://www.messenger.com/t/${brideId}`;
         document.getElementById('messenger-groom').href = `https://www.messenger.com/t/${groomId}`;
+        
+
     }
 }());
 
