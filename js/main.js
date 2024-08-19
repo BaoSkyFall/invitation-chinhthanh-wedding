@@ -376,7 +376,6 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
             data: JSON.stringify(formObject),
             contentType: 'text/plain;charset=utf-8',
             success: function (data) {
-                console.log(data);
                 if (data.result === 'success') {
                     $('.contact__msg').show();
                     contact__msg.addClass('alert-success');

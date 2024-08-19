@@ -2773,3 +2773,8 @@ input[type="range"]::-ms-fill-lower {
 input[type="range"]::-ms-fill-upper {  
   background-color: #ffff;
 }
+
+.toastify-top{
+    top: 0px!important;
+    /* max-width: 95vw!important; */
+}

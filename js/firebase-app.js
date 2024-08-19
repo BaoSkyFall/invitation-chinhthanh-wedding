@@ -103,7 +103,6 @@ $(document).ready(function () {
             let delay = 3000; // Initial delay
             querySnapshot.forEach(async (doc) => {
                 const data = doc.data();
-                console.log('data:', data)
                 setTimeout(() => {
                     Toastify({
                         text: `Lời chúc từ ${data.nameWishing} (${data.relationship}): ${data.messageWishing}`,
@@ -114,6 +113,8 @@ $(document).ready(function () {
                         stopOnFocus: true, // Prevents dismissing of toast on hover
                         style: {
                             background: "linear-gradient(to right, #BD945A, #D2B27A)",
+                            top: '0px!important',
+                            
                         },
                         onClick: function () { } // Callback after click
                     }).showToast();
