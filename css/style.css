@@ -993,15 +993,17 @@ body.offcanvason .oliven-nav-toggle {
     text-transform: uppercase;
 }
 
-.header .caption h1 {
+.header .caption h1,h2 {
     font-family: 'Alex Brush', cursive;
     font-weight: 400;
-    margin: 0 0 15px 0;
+    margin: 0 0 0 0;
     font-size: 120px;
-    color: #FFF;
+    color: #FFF!important;
     display: block;
     line-height: 1em;
     position: relative;
+    background-color: rgba(189, 148, 90, 0.45);
+    line-height: 120%;
 }
 
 .header .caption p {
@@ -1014,7 +1016,7 @@ body.offcanvason .oliven-nav-toggle {
     }
 
     .header .caption h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .header .caption h5 {
@@ -1282,7 +1284,7 @@ body.offcanvason .oliven-nav-toggle {
 }
 
 .bridegroom .info h6 {
-    font-size: 32px;
+    font-size: 25px;
     margin-bottom: 5px;
     font-weight: 400;
     font-family: 'Alex Brush', cursive;
@@ -1366,7 +1368,7 @@ body.offcanvason .oliven-nav-toggle {
 
 #countdown .section-head {
     margin-bottom: 30px;
-    margin-top: 100px;
+    margin-top: 148px;
     z-index: 1;
 }
 
@@ -1382,11 +1384,13 @@ body.offcanvason .oliven-nav-toggle {
 
 #countdown .section-head h4 {
     position: relative;
-    color: #000000;
+    color: #FFFFFF;
     font-family: 'Alex Brush', cursive;
     font-weight: 400;
     font-size: 60px;
     margin-bottom: 0;
+    background-color: rgba(189, 148, 90, 0.45);
+
 }
 
 #countdown .section-head p {
@@ -1437,7 +1441,7 @@ body.offcanvason .oliven-nav-toggle {
 
 @media all and (min-width: 768px) {
     #countdown {
-        background-size: 150vw 150vh;
+        /* background-size: 150vw 150vh; */
     }
 
 }
@@ -1701,12 +1705,14 @@ body.offcanvason .oliven-nav-toggle {
 
 .seeyou .section-head h4 {
     position: relative;
-    color: #fff;
+    color: #fff!important;
     font-family: "Caramel", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
     margin-bottom: 0;
+    background-color: rgba(189, 148, 90, 0.45);
+
 }
 
 
@@ -2553,7 +2559,7 @@ body.offcanvason .oliven-nav-toggle {
     }
 
     #countdown .section-head h4 {
-        font-size: 32px;
+        font-size: 20px;
         line-height: 1em;
     }
 

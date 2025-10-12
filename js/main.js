@@ -254,16 +254,16 @@
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-    let birthday = "Sep 14, 2024 18:00:00",
+    let birthday = "Nov 01, 2025 11:30:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function () {
             let now = new Date().getTime(),
                 distance = countDown - now;
 
-            // document.getElementById("days").innerText = Math.floor(distance / (day)),
-            //     document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-            //     document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-            //     document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            document.getElementById("days").innerText = Math.floor(distance / (day)),
+                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
             //do something later when date is reached
             if (distance < 0) {
@@ -280,8 +280,8 @@
             //seconds
         }, 0)
     // IDs for the bride and groom
-    const brideId = '100010193289535'; // Replace with actual bride's Facebook ID
-    const groomId = '100009013866445'; // Replace with actual groom's Facebook ID
+    const brideId = '100003277264221'; // Replace with actual bride's Facebook ID
+    const groomId = '100018797527341'; // Replace with actual groom's Facebook ID
 
     // Detect the user's device
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -312,7 +312,7 @@
 
 function copySTK(index) {
     // Text to be copied
-    const textToCopy = index == 1 ? '938443767' : '00000186678';
+    const textToCopy = index == 1 ? '0975889923' : '00000186678';
 
     // Create a temporary input element
     const tempInput = document.createElement('input');
