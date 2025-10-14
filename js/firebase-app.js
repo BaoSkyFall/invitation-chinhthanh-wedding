@@ -74,7 +74,7 @@ $(document).ready(function () {
             formObject.timestamp = new Date();
             try {
                 await signInAnonymously(auth);
-                await addDoc(collection(db, 'rsvp_entries'), formObject);
+                await addDoc(collection(db, 'rsvp_thothao'), formObject);
                 $('.contact__msg_wishing').show();
                 $('#wishingForm')[0].reset();
                 loadData();
@@ -98,7 +98,7 @@ $(document).ready(function () {
     // });
     async function loadData() {
         try {
-            const q = query(collection(db, 'rsvp_entries'), orderBy('timestamp', 'desc'));
+            const q = query(collection(db, 'rsvp_thothao'), orderBy('timestamp', 'desc'));
             const querySnapshot = await getDocs(q);
             let delay = 3000; // Initial delay
             querySnapshot.forEach(async (doc) => {
