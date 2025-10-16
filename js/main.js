@@ -312,7 +312,7 @@
 
 function copySTK(index) {
     // Text to be copied
-    const textToCopy = index == 1 ? '0975889923' : '00000186678';
+    const textToCopy = index == 1 ? '0975889923' : '102871708295';
 
     // Create a temporary input element
     const tempInput = document.createElement('input');
