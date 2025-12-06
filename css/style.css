@@ -1016,11 +1016,12 @@ body.offcanvason .oliven-nav-toggle {
     }
 
     .header .caption h1 {
-        font-size: 35px;
+    margin-top:40px;
+        font-size: 60px;
     }
 
     .header .caption h5 {
-        font-size: 12px;
+        font-size: 24px;
     }
 }
 
