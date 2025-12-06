@@ -4,26 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hữu Thọ & Phương Thảo Wedding</title>
+    <title>Phương Chính & Vũ Thanh Wedding</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Thư mời tham dự lễ cưới của Hữu Thọ & Phương Thảo - Save The Date: 01.11.2025">
+    <meta name="description" content="Thư mời tham dự lễ cưới của Phương Chính & Vũ Thanh - Save The Date 25.01.2026">
 
     <!-- Open Graph / Facebook / Zalo Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thothao-wedding-invitation.netlify.app/">
-    <meta property="og:title" content="Hữu Thọ & Phương Thảo Wedding">
-    <meta property="og:description" content="Trân trọng kính mời bạn đến tham dự lễ cưới của chúng tôi. Lễ Vu Quy: 01/11/2025 tại Vũng Tàu - Lễ Tân Hôn: 15/11/2025 tại Hà Tĩnh">
-    <meta property="og:image" content="https://thothao-wedding-invitation.netlify.app/images/gallery/1.jpg">
+    <meta property="og:url" content="https://chinhthanh-wedding-invitation.netlify.app/">
+    <meta property="og:title" content="Phương Chính & Vũ Thanh Wedding">
+    <meta property="og:description" content="Trân trọng kính mời bạn đến tham dự lễ cưới của chúng tôi. Hôn lễ: 08:00 Chủ nhật 25/01/2026 tại tư gia - Tiệc cưới: 18:00 ngày 25/01/2026 tại ADORA CENTER">
+    <meta property="og:image" content="https://chinhthanh-wedding-invitation.netlify.app/images/gallery/1.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Hữu Thọ & Phương Thảo Wedding">
+    <meta property="og:image:alt" content="Phương Chính & Vũ Thanh Wedding">
 
     <!-- Twitter Meta Tags (optional but recommended) -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://thothao-wedding-invitation.netlify.app/">
-    <meta property="twitter:title" content="Hữu Thọ & Phương Thảo Wedding">
-    <meta property="twitter:description" content="Trân trọng kính mời bạn đến tham dự lễ cưới của chúng tôi. Lễ Vu Quy: 01/11/2025 tại Vũng Tàu - Lễ Tân Hôn: 15/11/2025 tại Hà Tĩnh">
-    <meta property="twitter:image" content="https://thothao-wedding-invitation.netlify.app/images/gallery/1.jpg">
+    <meta property="twitter:url" content="https://chinhthanh-wedding-invitation.netlify.app/">
+    <meta property="twitter:title" content="Phương Chính & Vũ Thanh Wedding">
+    <meta property="twitter:description" content="Trân trọng kính mời bạn đến tham dự lễ cưới của chúng tôi. Hôn lễ: 08:00 Chủ nhật 25/01/2026 tại tư gia - Tiệc cưới: 18:00 ngày 25/01/2026 tại ADORA CENTER">
+    <meta property="twitter:image" content="https://chinhthanh-wedding-invitation.netlify.app/images/gallery/1.jpg">
 
     <link rel="icon" type="image/png" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/animate.css">
@@ -35,6 +35,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <style>
+        /* Responsive background position for countdown section */
+        #countdown {
+            background-position: center -400px;
+        }
+
+        /* Responsive background position for seeyou section */
+        #seeyou {
+            background-position: center -300px;
+        }
+
+        @media (max-width: 768px) {
+            #countdown {
+                background-position: center center;
+            }
+
+            #seeyou {
+                background-position: center -100px;
+            }
+        }
+    </style>
     <!-- Add Firebase SDK -->
     <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
     <script type="module" src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js"></script>
@@ -55,9 +76,9 @@
         <aside id="oliven-aside">
             <!-- Logo -->
             <div class="oliven-logo">
-                <a href="index.html"> <img loading="lazy" src="images/logo.png" alt=""> <span>Hữu Thọ<small> &</small>
-                        Phương Thảo</span>
-                    <h6>Save The Date: 01.11.2025</h6>
+                <a href="index.html"> <img loading="lazy" src="images/logo.png" alt=""> <span>Phương Chính<small> &</small>
+                        Vũ Thanh</span>
+                    <h6> 25.01.2026</h6>
                 </a>
             </div>
             <!-- Menu -->
@@ -73,8 +94,8 @@
             </nav>
             <!-- Sidebar Footer -->
             <div class="footer1"> <span class="separator"></span>
-                <p>Hữu Thọ & Phương Thảo
-                    <br />Save The Date: 01.11.2025, Vũng Tàu
+                <p>Phương Chính & Vũ Thanh
+                    <br />25.01.2026
                 </p>
             </div>
         </aside>
@@ -98,11 +119,11 @@
                     <div class="row">
                         <div class="col-md-12 text-center caption">
                             <h1 class="animate-box fadeInUp animated mb-2" data-animate-effect="fadeInUp">
-                                <span style="font-size:25px">Save The Date</span>
+                                <!--<span style="font-size:25px">Save The Date</span>-->
                                 <br>
-                                Hữu Thọ &amp;
-                                Phương Thảo 
-                            <br> <span style="font-size:25px">01.11.2025</span>
+                                Phương Chính <br>&amp;<br>
+                                Vũ Thanh
+                            <br> <span style="font-size:25px">25.01.2026</span>
                             </h1>
                         </div>
                     </div>
@@ -123,7 +144,7 @@
                             <div class="item mb-30 animate-box" data-animate-effect="fadeInRight" style="background: none;padding:0">
                                 <div class="info valign">
                                     <div class="full-width">
-                                        <h6>Thư Mời Tham Dự Lễ Cưới</h6> 
+                                        <h6>Thư Mời Tham Dự Lễ Cưới</h6>
                                     </div>
                                 </div>
                             </div>
@@ -132,13 +153,11 @@
                     <div class="row mb-0">
                         <div class="col-md-6">
                             <div class="item mb-30 animate-box" data-animate-effect="fadeInRight">
-                                <p>Nhà Trai</p>
-                                        <p>Ông: Nguyễn Văn Khương <br> Bà: Trần Thị Phương</p>
                                 <div class="img"> <img loading="lazy" src="images/groom.jpg" alt=""> </div>
                                 <div class="info valign">
                                     <div class="full-width">
-                                        <h6>Nguyễn Hữu Thọ <i class="ti-heart"></i></h6> 
-                                        <span>Trưởng Nam</span>
+                                        <h6>Vương Phương Chính <i class="ti-heart"></i></h6>
+                                        <span>Thứ Nam</span>
                                         <!-- <p>Enrico fringilla dui at elit finibus viverra thenec a lacus seda themo the miss druane semper non the fermen.</p> -->
                                         <div class="social">
                                             <div class="full-width">
@@ -154,14 +173,12 @@
                         </div>
                         <div class="col-md-6">
                             <div class="item toright mb-30 animate-box" data-animate-effect="fadeInLeft">
-                                <p>Nhà Gái</p>
-                                         <p>Ông: Dương Công Nguyên <br> Bà: Nguyễn Thị Thơ</p>
                                 <div class="img"> <img loading="lazy" src="images/bride.jpg" alt=""> </div>
                                 <div class="info valign">
                                     <div class="full-width">
-                                        <h6>Dương Thị Phương Thảo<i class="mx-2 ti-heart"></i></h6> 
-                                        <span>Trưởng
-                                            Nữ</span>
+                                        <h6>Nguyễn Nữ Vũ Thanh<i class="mx-2 ti-heart"></i></h6>
+                                        <span>Ái
+                                            Nữ</span>
                                         <!-- <p>Olivia fringilla dui at elit finibus viverra thenec a lacus seda themo the miss druane semper non the fermen.</p> -->
                                         <div class="social">
                                             <div class="full-width">
@@ -186,7 +203,7 @@
                                             <div class="full-width">
                                                 <a href="instagram://user?username=conlasuiu"                                                conlasuiu/"
                                                     target="_blank" class="icon"> <i class="ti-instagram"></i> </a>
-                                               
+
                                             </div>
                                         </div>
                                     </div>
@@ -196,29 +213,28 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 text-center animate-box" data-animate-effect="fadeInUp">
-                            <h3 class="oliven-couple-title">Đám cưới sẽ diễn ra</h3>
-                 
+                            <h3 class="oliven-couple-title">Đám cưới sẽ diễn ra</h3>
 
-                            <a href="https://maps.app.goo.gl/mhFzG1ZkaXuYzszM6" target="_blank">
-                                <h4 class="oliven-couple-subtitle">Lễ Vu Quy <br> 11:30 Thứ Bảy, Ngày 01/11/2025
-                                    <br> <i class="ti-home"></i> Sảnh LOUIS II, MAXIM'S, 36 Nguyễn Thái Học, Phường 7,
-                                    TP. Vũng Tàu
+
+                            <a href="https://maps.app.goo.gl/ejaKJS5Lf69bcziG6" target="_blank">
+                                <h4 class="oliven-couple-subtitle">Hôn Lễ <br> 08:00 Chủ nhật, Ngày 25/01/2026
+                                    <br> <i class="ti-home"></i> Tư Gia
                                 </h4>
                             </a>
                                    <h4 class="oliven-couple-subtitle"> <i class="ti-line-dashed"></i>
                             </h4>
-                             <a href="https://maps.app.goo.gl/5bZWesy6QGSxLS1h7" target="_blank">
-                                <h4 class="oliven-couple-subtitle">Lễ Thành Hôn <br> 11:00 Thứ Bảy, Ngày 15/11/2025
-                                    <br> <i class="ti-home"></i> Nhà Hàng Hải Huyền , 318 Đường Lê Lợi, Xã Hương Sơn, Tỉnh Hà Tĩnh
+                             <a href="https://maps.app.goo.gl/mF82eUaAeeHfiqPE8" target="_blank">
+                                <h4 class="oliven-couple-subtitle">Tiệc Cưới <br> Đón khách: 18:00 - Khai tiệc: 19:00, Ngày 25/01/2026
+                                    <br> <i class="ti-home"></i> ADORA CENTER, SẢNH OPAL - LẦU 1<br>431 HOÀNG VĂN THỤ, PHƯỜNG TÂN SƠN NHẤT, TP. HCM (QUẬN TÂN BÌNH CŨ)
                                 </h4>
                             </a>
-                             
+
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Countdown -->
-            <div id="countdown" class="section-padding bg-img bg-fixed" style="background-position: center center;"
+            <div id="countdown" class="section-padding bg-img bg-fixed"
                 data-background="images/banner-1.jpg">
                 <div class="container">
                     <div class="row">
@@ -245,63 +261,26 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 mb-30">
-                            <h2 class="oliven-title" style="color:black!important; background: none;">Lịch Trình Lễ Vu Quy</h2>
+                            <h2 class="oliven-title" style="color:black!important; background: none;">Lịch Trình</h2>
                         </div>
                     </div>
                     <div class="row bord-box bg-img" data-background="images/banner-4.jpg"
                         style="background-position: center;">
                         <div class="col-md-6 item-box">
-                            <a>
+                            <a href="https://maps.app.goo.gl/ejaKJS5Lf69bcziG6">
 
                                 <h2 class="custom-font numb" style="color:transparent!important;background: none">Hôn Lễ</h2>
-                                <h6 class="title">08:00 - Thứ 7, Ngày 01/11/2025</h6>
-                                <p><span><i class="ti-location-pin"></i></span> Tư Gia - Vũng Tàu
+                                <h6 class="title">08:00 - Chủ nhật, Ngày 25/01/2026</h6>
+                                <p><span><i class="ti-location-pin"></i></span> Tư Gia
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </p>
                             </a>
                         </div>
                         <div class="col-md-6 item-box">
-                            <a href="https://maps.app.goo.gl/mhFzG1ZkaXuYzszM6" target="_blank">
-                                <h2 class="custom-font numb" style="color:transparent!important;background: none">Tiệc Mừng Lễ Vu Quy</h2>
-                                <h6 class="title">11:30 - Thứ 7, Ngày 01/11/2025</h6>
-                                <p style="width: 65%;"><span><i class="ti-location-pin"></i></span> Maxim's, Sảnh Louis II - 136 Nguyễn Thái
-                                    Học, Phường 7, TP. Vũng Tàu
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </p>
-                            </a>
-                        </div>
-
-                        <!-- <div class="col-md-3 item-box">
-                            <h2 class="custom-font numb">04</h2>
-                            <h6 class="title">Cake Cutting</h6>
-                            <p>Delta tristiu the jusone duise vitae diam neque nivami mis est augue artine aringilla the
-                                at elit finibus vivera.</p>
-                        </div> -->
-                    </div>
-                </div>
-                        <div class="container mt-4">
-                    <div class="row">
-                        <div class="col-md-12 mb-30">
-                            <h2 class="oliven-title" style="color:black!important; background: none;">Lịch Trình Lễ Tân Hôn</h2>
-                        </div>
-                    </div>
-                    <div class="row bord-box bg-img" data-background="images/banner-4.jpg"
-                        style="background-position: center;">
-                        <div class="col-md-6 item-box">
-                            <a>
-
-                                <h2 class="custom-font numb" style="color:transparent!important;background: none">Hôn Lễ</h2>
-                                <h6 class="title">08:00 - Thứ 7, Ngày 15/11/2025</h6>
-                                <p><span><i class="ti-location-pin"></i></span> Tư Gia - Hà Tĩnh
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </p>
-                            </a>
-                        </div>
-                        <div class="col-md-6 item-box">
-                            <a href="https://maps.app.goo.gl/5bZWesy6QGSxLS1h7" target="_blank">
-                                <h2 class="custom-font numb" style="color:transparent!important;background: none">Tiệc Mừng Lễ Tân Hôn</h2>
-                                <h6 class="title">11:00 - Thứ 7, Ngày 15/11/2025</h6>
-                                <p style="width: 65%;"><span><i class="ti-location-pin"></i></span>  Nhà Hàng Hải Huyền , 318 Đường Lê Lợi, Xã Hương Sơn, Tỉnh Hà Tĩnh
+                            <a href="https://maps.app.goo.gl/mF82eUaAeeHfiqPE8" target="_blank">
+                                <h2 class="custom-font numb" style="color:transparent!important;background: none">Tiệc Cưới</h2>
+                                <h6 class="title">Đón khách: 18:00 - Khai tiệc: 19:00, Ngày 25/01/2026</h6>
+                                <p style="width: 65%;"><span><i class="ti-location-pin"></i></span> ADORA CENTER, SẢNH OPAL - LẦU 1, 431 HOÀNG VĂN THỤ, PHƯỜNG TÂN SƠN NHẤT, TP. HCM (QUẬN TÂN BÌNH CŨ)
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </p>
                             </a>
@@ -318,7 +297,7 @@
             </div>
 
             <!-- See you -->
-            <div id="seeyou" class="seeyou section-padding bg-img bg-fixed" style="background-position: center center;"
+            <div id="seeyou" class="seeyou section-padding bg-img bg-fixed"
                 data-background="images/banner-3.jpg">
                 <div class="container">
                     <div class="row">
@@ -341,7 +320,7 @@
             <div id="organization" class="organization section-padding bg-pink " style="padding-bottom: 0;">
 
             </div>
-      
+
             <!-- Gallery -->
             <div id="gallery" class="section-padding">
                 <div class="container">
@@ -498,7 +477,7 @@
             </div>
 
             <!-- Confirmation -->
-            <div id="rsvp" class="section-padding bg-img bg-fixed" loading="lazy" style="background-position: center;"
+            <div id="rsvp" class="section-padding bg-img bg-fixed" loading="lazy" style="background-position: 180px -20%;"
                 data-background="images/banner-5.jpg">
                 <div class="container ">
                     <div class="row">
@@ -666,7 +645,7 @@
                                 </div>
                             </div>
                         </div>
-        
+
                     </div>
                 </div>
             </div>
@@ -676,14 +655,14 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <h2>
-                                <a href="index.html"><img loading="lazy" src="images/logo.png" alt=""><span>Hữu Thọ
+                                <a href="index.html"><img loading="lazy" src="images/logo.png" alt=""><span>Phương Chính
                                         <small>&</small>
-                                        Phương Thảo</span></a>
+                                        Vũ Thanh</span></a>
                             </h2>
-                            <p class="copyright">Lễ Vu Quy <br>01/11/2025 – Vũng Tàu</p>
+                            <p class="copyright">Hôn Lễ: 08:00 Chủ nhật <br>25/01/2026 – Tư Gia</p>
                             <h4 class="oliven-couple-subtitle"> <i class="ti-line-dashed"></i>
                             </h4>
-                            <p class="copyright">Lễ Tân Hôn <br>15/11/2025 – Hà Tĩnh</p>
+                            <p class="copyright">Tiệc Cưới: 18:00 - 19:00 <br>25/01/2026 – ADORA CENTER, TP. HCM</p>
                             <p>Thank you. <br>Ngày cưới sẽ càng trở nên ý nghĩa hơn khi có sự góp mặt của Quý Khách</p>
 
                         </div>

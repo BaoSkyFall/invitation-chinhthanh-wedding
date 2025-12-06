@@ -59,7 +59,7 @@
     };
 
 
-    // Burger Menu 
+    // Burger Menu
     var burgerMenu = function () {
         $('.js-oliven-nav-toggle').on('click', function (event) {
             event.preventDefault();
@@ -207,7 +207,7 @@
                 }
             }
         });
-    // Gallery 
+    // Gallery
     $(window).on("load", function () {
         var e = $(".gallery-filter")
             , a = $("#gallery-filter");
@@ -254,7 +254,7 @@
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-    let birthday = "Nov 01, 2025 11:30:00",
+    let birthday = "Jan 25, 2026 18:00:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function () {
             let now = new Date().getTime(),
@@ -280,8 +280,8 @@
             //seconds
         }, 0)
     // IDs for the bride and groom
-    const brideId = '100003277264221'; // Replace with actual bride's Facebook ID
-    const groomId = '100018797527341'; // Replace with actual groom's Facebook ID
+    const brideId = '100056874371306'; // Replace with actual bride's Facebook ID
+    const groomId = '100003723135394'; // Replace with actual groom's Facebook ID
 
     // Detect the user's device
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
@@ -298,21 +298,21 @@
         document.getElementById('facebook-groom').href = `fb://profile/${groomId}`;
         document.getElementById('messenger-bride').href = `fb-messenger://user-thread/${brideId}`;
         document.getElementById('messenger-groom').href = `fb-messenger://user-thread/${groomId}`;
-        
+
     } else {
         // Laptop or other devices
         document.getElementById('facebook-bride').href = `https://www.facebook.com/${brideId}`;
         document.getElementById('facebook-groom').href = `https://www.facebook.com/${groomId}`;
         document.getElementById('messenger-bride').href = `https://www.messenger.com/t/${brideId}`;
         document.getElementById('messenger-groom').href = `https://www.messenger.com/t/${groomId}`;
-        
+
 
     }
 }());
 
 function copySTK(index) {
     // Text to be copied
-    const textToCopy = index == 1 ? '0975889923' : '102871708295';
+    const textToCopy = index == 1 ? '1932910292' : '00000567552';
 
     // Create a temporary input element
     const tempInput = document.createElement('input');
@@ -398,4 +398,3 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     }
 
 });
-

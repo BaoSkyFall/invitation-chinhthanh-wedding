@@ -1002,7 +1002,7 @@ body.offcanvason .oliven-nav-toggle {
     display: block;
     line-height: 1em;
     position: relative;
-    background-color: rgba(189, 148, 90, 0.45);
+    /*background-color: rgba(189, 148, 90, 0.45);*/
     line-height: 120%;
 }
 
@@ -1284,7 +1284,7 @@ body.offcanvason .oliven-nav-toggle {
 }
 
 .bridegroom .info h6 {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 5px;
     font-weight: 400;
     font-family: 'Alex Brush', cursive;
@@ -1297,7 +1297,7 @@ body.offcanvason .oliven-nav-toggle {
 
 .bridegroom .info span {
     color: #BD945A;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     font-family: 'Barlow Semi Condensed', serif;
 }
@@ -2654,7 +2654,7 @@ body.offcanvason .oliven-nav-toggle {
 }
 
 #spotify-music-control {
-   
+
     width: 95vw;
     max-width: 468px;
     display: none;
@@ -2746,14 +2746,14 @@ body.offcanvason .oliven-nav-toggle {
       -webkit-appearance: none;
       background-color: #ffff;
     }
-    
+
     input[type='range']::-webkit-slider-runnable-track {
       height: 10px;
       -webkit-appearance: none;
       color: #ffff;
       margin-top: -1px;
     }
-    
+
     input[type='range']::-webkit-slider-thumb {
       width: 10px;
       -webkit-appearance: none;
@@ -2767,16 +2767,16 @@ body.offcanvason .oliven-nav-toggle {
 
 /** FF*/
 input[type="range"]::-moz-range-progress {
-  background-color: #BD945A; 
+  background-color: #BD945A;
 }
-input[type="range"]::-moz-range-track {  
+input[type="range"]::-moz-range-track {
   background-color: #ffff;
 }
 /* IE*/
 input[type="range"]::-ms-fill-lower {
-  background-color: #BD945A; 
+  background-color: #BD945A;
 }
-input[type="range"]::-ms-fill-upper {  
+input[type="range"]::-ms-fill-upper {
   background-color: #ffff;
 }
 
