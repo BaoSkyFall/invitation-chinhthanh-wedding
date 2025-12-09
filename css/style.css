@@ -1016,7 +1016,7 @@ body.offcanvason .oliven-nav-toggle {
     }
 
     .header .caption h1 {
-    margin-top:75px;
+    margin-top:0;
         font-size: 60px;
     }
 
@@ -2024,7 +2024,7 @@ body.offcanvason .oliven-nav-toggle {
 .footer2 h2,
 .footer2 h2 a {
     font-family: 'Barlow Semi Condensed', serif;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 500;
     display: block;
     width: 100%;
