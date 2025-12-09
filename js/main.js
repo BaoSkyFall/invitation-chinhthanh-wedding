@@ -345,56 +345,56 @@ function downloadQR(index) {
 }
 window.googleDocCallback = function () { return true; };
 
-document.getElementById('contactForm').addEventListener('submit', function (e) {
+// document.getElementById('contactForm').addEventListener('submit', function (e) {
 
-    let isValid = true;
-    const nameField = $('input[name="name"]');
-    if (nameField.val().trim() === '') {
-        nameField.next('.error-message').show();
-        isValid = false;
-    } else {
-        nameField.next('.error-message').hide();
-    }
+//     let isValid = true;
+//     const nameField = $('input[name="name"]');
+//     if (nameField.val().trim() === '') {
+//         nameField.next('.error-message').show();
+//         isValid = false;
+//     } else {
+//         nameField.next('.error-message').hide();
+//     }
 
-    if (isValid) {
-        const formData = $(this).serializeArray();
-        const formObject = {};
-        $.each(formData, function (_, field) {
-            formObject[field.name] = field.value;
-        });
-        e.preventDefault();
-        var contact__msg = $('.contact__msg');
-        contact__msg.show();
-        contact__msg.html('Đang gửi...');
-        contact__msg.removeClass('alert-success');
-        contact__msg.addClass('alert-warning');
-        formData.forEach((value, key) => formObject[key] = value);
-        $.ajax({
-            url: 'https://script.google.com/macros/s/AKfycbyRTPAO58gux_MC-13VKUny8Axh2vFQuKOIG-9pDeM44UTXQjQJ3AGw48yH6zJYYoKAgg/exec',  // Replace with your Web App URL
-            method: 'POST',
-            crossDomain: true,
-            data: JSON.stringify(formObject),
-            contentType: 'text/plain;charset=utf-8',
-            success: function (data) {
-                if (data.result === 'success') {
-                    $('.contact__msg').show();
-                    contact__msg.addClass('alert-success');
-                    contact__msg.removeClass('alert-warning');
-                    $('.contact__msg').html('Đã xác nhận tham dự thành công');
-                    setTimeout(() => {
-                        $('.contact__msg').hide();
-                        $('#contactForm')[0].reset();
+//     if (isValid) {
+//         const formData = $(this).serializeArray();
+//         const formObject = {};
+//         $.each(formData, function (_, field) {
+//             formObject[field.name] = field.value;
+//         });
+//         e.preventDefault();
+//         var contact__msg = $('.contact__msg');
+//         contact__msg.show();
+//         contact__msg.html('Đang gửi...');
+//         contact__msg.removeClass('alert-success');
+//         contact__msg.addClass('alert-warning');
+//         formData.forEach((value, key) => formObject[key] = value);
+//         $.ajax({
+//             url: 'https://script.google.com/macros/s/AKfycbyRTPAO58gux_MC-13VKUny8Axh2vFQuKOIG-9pDeM44UTXQjQJ3AGw48yH6zJYYoKAgg/exec',  // Replace with your Web App URL
+//             method: 'POST',
+//             crossDomain: true,
+//             data: JSON.stringify(formObject),
+//             contentType: 'text/plain;charset=utf-8',
+//             success: function (data) {
+//                 if (data.result === 'success') {
+//                     $('.contact__msg').show();
+//                     contact__msg.addClass('alert-success');
+//                     contact__msg.removeClass('alert-warning');
+//                     $('.contact__msg').html('Đã xác nhận tham dự thành công');
+//                     setTimeout(() => {
+//                         $('.contact__msg').hide();
+//                         $('#contactForm')[0].reset();
 
-                    }, 5000)
-                } else {
-                    alert('Error submitting form');
-                }
-            },
-            error: function (error) {
-                console.error('Error:', error);
-            }
-        });
+//                     }, 5000)
+//                 } else {
+//                     alert('Error submitting form');
+//                 }
+//             },
+//             error: function (error) {
+//                 console.error('Error:', error);
+//             }
+//         });
 
-    }
+//     }
 
-});
+// });
