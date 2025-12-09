@@ -1265,7 +1265,7 @@ body.offcanvason .oliven-nav-toggle {
 
 /* ======= Bride & Groom style ======= */
 .bridegroom .item {
-    padding: 15px;
+    padding: 15px 0;
     border-radius: 0px;
     background: #fff;
     position: relative;
